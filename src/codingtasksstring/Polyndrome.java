@@ -1,29 +1,29 @@
-package String_tasks;
+package codingtasksstring;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Task_3 {
+public class Polyndrome {
 
-    public static void Entrt() {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    public static void enter() {
+        BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
         String st = null;
         System.out.println("Enter: ");
         try {
-            st = br.readLine();
+            st = read.readLine();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        chek(ToChar(st), st.length());
+        chek(toChar(st), st.length());
     }
 
-    public static char[] ToChar(String st) {
-        char CharArr[] = new char[st.length()];
+    public static char[] toChar(String st) {
+        char charArr[] = new char[st.length()];
         for (int i = 0; i < st.length(); i++) {
-            CharArr[i] = st.charAt(i);
+            charArr[i] = st.charAt(i);
         }
-        return CharArr;
+        return charArr;
     }
 
     public static void chek(char arr[], int l) {
