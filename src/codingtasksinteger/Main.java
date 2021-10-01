@@ -21,7 +21,7 @@ public class Main {
         listRandomValue.add(8);
         listRandomValue.add(19);
 
-      //  Fibonacci.enter();
+        Fibonacci.enter();
       //  Factorial.enter();
       //  SearchPopular.Search();
       //  Search.calculate(listRandomValue);
