@@ -17,10 +17,6 @@ public class Fibonacci {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        if (value == 1 || value == 0) {
-            System.out.println(1);
-            return;
-        }
         fibonachiCalculate(1, 1, value);
     }
 
@@ -34,10 +30,11 @@ public class Fibonacci {
 //    }
     public static void fibonachiCalculate(int value1, int value2, int num) {
         num--;
-        if (num == 0) {
+        if (num <= 0) {
             System.out.println(value2);
             return;
         }
+
         ;
         fibonachiCalculate(value2, value2 + value1, num);
     }
